@@ -1,0 +1,25 @@
+.main-container {
+
+    height: auto;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+.titolo-article {
+
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: justify;
+
+
+}
+
+.paragraph-article, .paragraph-article2 {
+
+    border-bottom: 0.1px solid #9c9c9c;
+    padding-bottom: 5%;
+
+}

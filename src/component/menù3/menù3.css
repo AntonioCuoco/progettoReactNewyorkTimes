@@ -1,0 +1,36 @@
+.third-menù-container {
+
+    width: 100%;
+    border-bottom: 0.1px solid grey;
+
+}
+
+.menù-list {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.menù-item {
+
+    padding: 0 2%;
+    list-style-type: none;
+    font-size: 14px;
+
+}
+
+.link-item {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .third-menù-container {
+        display: none;
+    }
+    .link-item {
+        text-decoration: none;
+        color: black;
+    }
+}

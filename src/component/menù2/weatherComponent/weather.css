@@ -1,0 +1,19 @@
+.div-weather {
+
+    display: flex;
+
+}
+
+.weather-icon {
+
+    margin-top: 18px;
+    /* margin-right: 16px; */
+
+}
+
+.weather-item {
+
+    margin-right: 16px;
+    margin-top: 38px;
+
+}

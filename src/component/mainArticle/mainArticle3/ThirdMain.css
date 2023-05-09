@@ -1,0 +1,17 @@
+.split1-container2 {
+
+    border-bottom: 0.1px grey solid;
+
+}
+
+.article-container2 {
+
+    display: flex;
+
+}
+
+.article-one2, .article-two2, .article.three2 {
+
+    margin-right: 26px;
+
+}
