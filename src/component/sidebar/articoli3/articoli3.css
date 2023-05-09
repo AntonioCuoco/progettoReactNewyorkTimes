@@ -1,0 +1,44 @@
+.article-container3 {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+
+}
+
+.article-one, .article-two, .article-three {
+
+    border-top: 0.1px solid grey;
+    margin-right: 3%;
+    display: flex;
+    
+}
+
+.image-container5 {
+
+padding: 3% 0;
+margin-left: 12px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .article-container3 {
+        width: auto;
+        height: auto;
+    }
+
+    .article-one, .article-two, .article-three {
+
+        border-top: 0.1px solid grey;
+        margin-right: 3%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .image-container5 {
+
+        display: none;
+        
+    }
+}

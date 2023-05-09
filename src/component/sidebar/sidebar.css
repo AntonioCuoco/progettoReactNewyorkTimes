@@ -1,0 +1,34 @@
+.sidebar-container {
+
+  
+
+}
+
+.first-articleSide {
+
+  margin-top: 5%;
+
+}
+
+.abstract {
+
+  border-bottom: 0.1px solid grey;
+  margin-left: 3%;
+  padding-bottom: 5%;
+
+}
+
+.titolo-articolo {
+
+    font-size: 22px;
+    padding: 0 3%;
+
+}
+
+.img-sidebar {
+
+  width: 340px;
+  height: 220px;
+  padding: 3% 3%;
+
+}

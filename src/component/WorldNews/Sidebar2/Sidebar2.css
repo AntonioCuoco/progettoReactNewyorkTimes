@@ -1,0 +1,22 @@
+.sidebar-articleContainer {
+    width: 30%;
+    margin-left: 5%;
+    border-left: 0.1px solid grey;
+    padding: 1%;
+}
+
+.container1 {
+    border-bottom: 0.1px solid grey;
+}
+
+.container2 {
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .sidebar-articleContainer{
+        display: none;
+    }
+  
+}

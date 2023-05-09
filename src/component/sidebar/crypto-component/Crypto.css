@@ -1,0 +1,22 @@
+.sidebar2-container {
+    border-left: 0.1px solid grey;
+    margin-top: 46px;
+    padding-left: 3%;
+}
+
+.crypto-container {
+    border-top: 0.1px solid grey;
+    margin-bottom: 28px;
+}
+
+.OtherInformation-container {
+    display: flex;
+}
+
+.btn-nextCrypto{
+    margin-right: 18px;
+}
+
+.articoli-container {
+    border-top: 0.1px solid grey;
+}

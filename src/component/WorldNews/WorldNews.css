@@ -1,0 +1,14 @@
+.worldNews-container {
+    margin: auto;
+    padding: 0 1%;
+    max-width: 1200px;
+}
+
+.article-container5 {
+    margin-top: 3%;
+    display: flex;
+} 
+
+@media (max-width: 768px) {
+  
+}

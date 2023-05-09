@@ -1,0 +1,23 @@
+.articoli1-container {
+    margin-top: 24px;
+}
+
+.img-articoli1 {
+    width: 100%;
+}
+
+.right-article-container {
+  display: flex;
+}
+
+.right-article1, .right-article2 {
+    display: flex;
+    flex-direction: column;
+    padding:1%;
+    margin-right: 2%;
+    border-top: 0.1px solid grey;
+}
+
+.img-right-article {
+    margin-top: 5%;
+}

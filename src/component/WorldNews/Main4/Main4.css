@@ -1,0 +1,40 @@
+.Main-articleContainer{
+    width: 70%;
+}
+
+.article1-Container {
+    border-bottom: 0.1px solid grey;
+}
+
+.article2-Container {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+}
+
+.article2-subContainer {
+    
+}
+
+.article2-subContainer2 {
+    border-top: 0.1px solid grey;
+    padding: 2% 0px;
+}
+
+@media (max-width: 768px) {
+    .Main-articleContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .article1-Container{
+    border-bottom: 0px solid grey;
+    }
+
+    .img-Main4,.img2-Main4,.img3-Main4 {
+        width: 100%
+    }
+}

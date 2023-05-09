@@ -1,0 +1,14 @@
+.articoli4-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.articolo4-container {
+    border-top: 1px solid grey;
+    padding: 5% 0px;
+}
+
+.articolo4 {
+    display: flex;
+    flex-direction: column;
+}
