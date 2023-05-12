@@ -10,8 +10,20 @@
 
 }
 
-.article-one2, .article-two2, .article.three2 {
+.article-one2, .article-two2, .article-three2 {
 
     margin-right: 26px;
 
+}
+
+.article-four2{
+    margin-right: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .article-three2, .article-four2 {
+
+        display: none;
+    
+    }
 }
