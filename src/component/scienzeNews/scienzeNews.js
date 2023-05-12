@@ -12,7 +12,7 @@ export default function ScienzeNews() {
     const [article, setArticle] = React.useState([])
 
     React.useEffect(() => {
-        fetch("https://api.nytimes.com/svc/news/v3/content/nyt/science.json?api-key=ckWbHJh5FHfknu1LNNiwRv03F8tdT1og")
+        fetch(`https://api.nytimes.com/svc/news/v3/content/nyt/science.json?api-key=${process.env.REACT_APP_API_KEY}`)
         .then(Response => Response.json())
         .then(data => setArticle([data]))
     },[])
