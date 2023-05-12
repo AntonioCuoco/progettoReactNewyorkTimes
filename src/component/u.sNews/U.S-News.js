@@ -12,7 +12,7 @@ export default function USnews() {
     const [article, setArticle] = React.useState([])
 
     React.useEffect(() => {
-        fetch("https://api.nytimes.com/svc/news/v3/content/nyt/u.s..json?api-key=ckWbHJh5FHfknu1LNNiwRv03F8tdT1og")
+        fetch(`https://api.nytimes.com/svc/news/v3/content/nyt/u.s..json?api-key=${process.env.REACT_APP_API_KEY}`)
         .then(Response => Response.json())
         .then(data => setArticle([data]))
     },[])
@@ -25,20 +25,20 @@ export default function USnews() {
                 abstract1={item.results[1].abstract}
                 url1={item.results[1].url}
                 multimedia1={item.results[1].multimedia[1].url}
-                titolo2={item.results[9].title}
-                abstract2={item.results[9].abstract}
-                url2={item.results[9].url}
-                multimedia2={item.results[9].multimedia[1].url}
+                titolo2={item.results[10].title}
+                abstract2={item.results[10].abstract}
+                url2={item.results[10].url}
+                multimedia2={item.results[10].multimedia[1].url}
                 titolo3={item.results[2].title}
                 abstract3={item.results[2].abstract}
                 url3={item.results[2].url}
                 multimedia3={item.results[2].multimedia[1].url}
             />
             <Sidebar2
-                titolo3={item.results[3].title}
-                abstract3={item.results[3].abstract}
-                url3={item.results[3].url}
-                multimedia3={item.results[3].multimedia[0].url}
+                titolo3={item.results[11].title}
+                abstract3={item.results[11].abstract}
+                url3={item.results[11].url}
+                multimedia3={item.results[11].multimedia[0].url}
                 titolo4={item.results[5].title}
                 abstract4={item.results[5].abstract}
                 url4={item.results[5].url}

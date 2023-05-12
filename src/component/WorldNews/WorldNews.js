@@ -1,8 +1,6 @@
 import React from "react"
 import MenùWorldNews from "./menù-worldNEws/menù1"
 import Menù2World from "../menù-worldNEws/menù2-World/menù2"
-import Menù2 from "../menù2/menù2"
-import Menù3 from "../menù3/menù3"
 import Sidebar2 from "./Sidebar2/Sidebar2"
 import Main4 from "./Main4/Main4"
 import "./WorldNews.css"
@@ -12,7 +10,7 @@ export default function WorldNews() {
     const [article, setArticle] = React.useState([])
 
     React.useEffect(() => {
-        fetch("https://api.nytimes.com/svc/news/v3/content/nyt/world.json?api-key=ckWbHJh5FHfknu1LNNiwRv03F8tdT1og")
+        fetch(`https://api.nytimes.com/svc/news/v3/content/nyt/world.json?api-key=${process.env.REACT_APP_API_KEY}`)
         .then(Response => Response.json())
         .then(data => setArticle([data]))
     },[])
