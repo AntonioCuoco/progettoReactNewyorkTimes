@@ -1,0 +1,28 @@
+.menù2-container {
+
+    border-bottom: 0.1px solid grey;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.title-menù {
+
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.img-logo {
+
+    width: 480px;
+    height: 78px;
+
+}
+
+@media (max-width: 768px) {
+    .menù2-container {
+        display: none;
+    }
+}
