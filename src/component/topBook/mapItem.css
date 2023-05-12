@@ -53,10 +53,7 @@
     justify-content: center;
     align-items: center;
     padding: 3% 3%;
-    border-bottom: 0.1px solid grey;
-    border-right: 0.1px solid grey;
-    border-top: 0.1px solid grey;
-    margin-right: 18px;
+    border: 0.1px solid grey;
 }
 
 .subTopBook-container2 {
@@ -66,9 +63,8 @@
     justify-content: center;
     align-items: center;
     padding: 3% 3%;
-    border-bottom: 0.1px solid grey;
-    border-left: 0.1px solid grey;
-    border-top: 0.1px solid grey;
+    border: 0.1px solid grey;
+    margin-top: 18px;
 }
 
 .subTopBook-container3 {
@@ -78,10 +74,7 @@
     justify-content: center;
     align-items: center;
     padding: 3% 3%;
-    border-bottom: 0.1px solid grey;
-    border-right: 0.1px solid #808080;
-    border-top: 0.1px solid grey;
-    margin-right: 18px;
+    border: 0.1px solid grey;
     margin-top: 18px;
 }
 
@@ -92,8 +85,23 @@
     justify-content: center;
     align-items: center;
     padding: 3% 3%;
-    border-bottom: 0.1px solid grey;
-    border-left: 0.1px solid grey;
-    border-top: 0.1px solid grey;
+    border: 0.1px solid grey;
     margin-top: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .topBook-container1 {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .topBook-container2 {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

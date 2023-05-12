@@ -16,7 +16,7 @@ React.useEffect(() => {
 },[counter2])
 
 React.useEffect(() => {
-    fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=ckWbHJh5FHfknu1LNNiwRv03F8tdT1og")
+    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
     .then(Response => Response.json())
     .then(data => setTopStories([data]))
   },[])
