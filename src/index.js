@@ -23,6 +23,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />}/>
+      {/* <Route path='/:article' element={<WorldNews />}/> */}  {/* non so se intendevi il dinamic routes nelle correzioni ma non so come applicarlo qui sinceramente poichè in ogni componente l'url cambia */}
       <Route path='/login' element={<MenùLogin />}/>
       <Route path='/world' element={<WorldNews />}/>
       <Route path='/us' element={<USnews />}/>

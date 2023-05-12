@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
 import MenùLogin from './component/loginPage/MenùLogin';
-import Menù1 from './component/menù1/menù1';
-import Menù2 from './component/menù2/menù2';
-import Menù3 from './component/menù3/menù3';
+import Menù1 from './component/menu1/menù1';
+import Menù2 from './component/menu2/menù2';
+import Menù3 from './component/menu3/menù3';
 import Sidebar from './component/sidebar/sidebar';
 import Main from "./component/mainArticle/mainArticle1/Main";
 import SecondMain from "./component/mainArticle/mainArticle2/Main2";
 import ThirdMain from "./component/mainArticle/mainArticle3/ThirdMain";
 import FourMain from './component/mainArticle/mainArticle4/Main4';
 import Crypto from './component/sidebar/crypto-component/Crypto';
-import MenùMobile from './component/menùHomeMobile/menùMobile';
+import MenùMobile from './component/menuHomeMobile/menùMobile';
 import Footer from './component/footer/footer';
 import ToopBook from './component/topBook/topBook';
 import Articoli3 from './component/sidebar/articoli3/articoli3';
@@ -20,7 +20,7 @@ export default function App() {
   const [Counter, setCounter] = React.useState(0)
 
   React.useEffect(() => {
-    fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=ckWbHJh5FHfknu1LNNiwRv03F8tdT1og")
+    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
     .then(Response => Response.json())
     .then(data => setTopStories([data]))
   },[])
@@ -137,6 +137,9 @@ export default function App() {
          </div>
          <div className='split1-container2'>
              {Main4}
+         </div>
+         <div className='crypto-mobile'>
+            <Crypto />
          </div>
          <div className='split2-container'>
          <div className='Subsplit2-container'>

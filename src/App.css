@@ -76,6 +76,10 @@ border-bottom: 0.1px grey solid;
     display: none;
 }
 
+.crypto-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .menùDesktop {
     display: none;
@@ -92,4 +96,16 @@ border-bottom: 0.1px grey solid;
   .split2{
     display: none;
   }
+
+  .split2-container {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .crypto-mobile {
+    display: block;
+  }
+
 }
